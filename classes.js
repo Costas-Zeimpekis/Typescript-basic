@@ -77,4 +77,30 @@ var Costas = /** @class */ (function (_super) {
 }(Person));
 var littleCostas = new Costas('Coco', 38);
 console.log('Cotsas:', littleCostas);
+//Getters & Setters
+var Plants = /** @class */ (function () {
+    function Plants() {
+        this._species = 'Default';
+    }
+    Object.defineProperty(Plants.prototype, "species", {
+        get: function () {
+            return this._species;
+        },
+        set: function (value) {
+            if (value.length > 3) {
+                this._species = value;
+            }
+            else {
+                this._species = 'Default';
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    return Plants;
+}());
+var plant = new Plants();
+console.log('Species', plant.species);
+plant.species = 'Paparouna';
+console.log('Species', plant.species);
 //# sourceMappingURL=classes.js.map

@@ -75,3 +75,26 @@ class Costas extends Person {
 
 const littleCostas = new Costas('Coco', 38);
 console.log('Cotsas:', littleCostas);
+
+//Getters & Setters
+class Plants {
+  private _species: string = 'Default';
+
+  set species(value: string) {
+    if (value.length > 3) {
+      this._species = value;
+    } else {
+      this._species = 'Default';
+    }
+  }
+
+  get species() {
+    return this._species;
+  }
+}
+
+const plant = new Plants();
+
+console.log('Species', plant.species);
+plant.species = 'Paparouna';
+console.log('Species', plant.species);
