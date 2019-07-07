@@ -8,10 +8,10 @@
     "compile:tsc": "tsc --watch"
   },
   "dependencies": {
-    "global": "^4.4.0"
+    "global": "^4.4.0",
+    "systemjs": "^4.0.1"
   },
   "devDependencies": {
-    "ts-node": "^8.3.0",
     "typescript": "^3.5.2"
   }
 }

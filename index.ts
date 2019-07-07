@@ -2,6 +2,11 @@
 ///<reference path="rectangleMath.ts"/>
 ///<reference path="namespaces.ts"/>
 
+// import { calcCirc } from "./Math/circle";
+
+// import { calcCirc } from './Math/circle';
+// import { calcRentangle } from './Math/rectangle';
+
 //string
 let myName = 'Costas';
 
@@ -124,3 +129,5 @@ let canAlsoBeNull;
 canAlsoBeNull = null;
 
 let canThisBeAny = null;
+
+// console.log(calcCirc(10));

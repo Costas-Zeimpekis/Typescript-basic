@@ -2,6 +2,9 @@
 ///<reference path="circleMath.ts"/>
 ///<reference path="rectangleMath.ts"/>
 ///<reference path="namespaces.ts"/>
+// import { calcCirc } from "./Math/circle";
+// import { calcCirc } from './Math/circle';
+// import { calcRentangle } from './Math/rectangle';
 //string
 var myName = 'Costas';
 // numbers
@@ -85,4 +88,5 @@ canBeNull = null;
 var canAlsoBeNull;
 canAlsoBeNull = null;
 var canThisBeAny = null;
+// console.log(calcCirc(10));
 //# sourceMappingURL=index.js.map
