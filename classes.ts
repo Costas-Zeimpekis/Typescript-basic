@@ -98,3 +98,17 @@ const plant = new Plants();
 console.log('Species', plant.species);
 plant.species = 'Paparouna';
 console.log('Species', plant.species);
+
+//Static Properties & Methods
+class Helpers {
+  static PI: number = 3.14;
+
+  static calc(diameter: number): number {
+    const res = this.PI * diameter;
+    return res;
+
+    // console.log(diameter);
+  }
+}
+
+Helpers.calc(2);

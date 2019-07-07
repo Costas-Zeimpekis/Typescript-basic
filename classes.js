@@ -103,4 +103,17 @@ var plant = new Plants();
 console.log('Species', plant.species);
 plant.species = 'Paparouna';
 console.log('Species', plant.species);
+//Static Properties & Methods
+var Helpers = /** @class */ (function () {
+    function Helpers() {
+    }
+    Helpers.calc = function (diameter) {
+        var res = this.PI * diameter;
+        return res;
+        // console.log(diameter);
+    };
+    Helpers.PI = 3.14;
+    return Helpers;
+}());
+Helpers.calc(2);
 //# sourceMappingURL=classes.js.map
