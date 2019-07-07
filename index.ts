@@ -7,6 +7,8 @@
 // import { calcCirc } from './Math/circle';
 // import { calcRentangle } from './Math/rectangle';
 
+// const {calcCirc} = require('./Math/circle');
+
 //string
 let myName = 'Costas';
 
