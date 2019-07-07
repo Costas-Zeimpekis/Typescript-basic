@@ -43,7 +43,7 @@ class Person {
   private type: string = '';
   protected age: number = 27;
 
-  constructor(name: string, public username: string) {
+  constructor(name: string, public username: string = '123') {
     this.name = name;
   }
 
@@ -55,15 +55,23 @@ class Person {
 
   protected setType(type: string) {
     this.type = type;
+    console.log(type);
   }
 }
 
 const person = new Person('Costas', '123K');
 
 // person.setType('married');
-person.print('Cool Guy');
+// person.print('Cool Guy');
 
 console.log(person);
 
 // Inheritance
-class Costas extends Person {}
+class Costas extends Person {
+  constructor(name: string, public age: number, username?: string) {
+    super(name, username);
+  }
+}
+
+const littleCostas = new Costas('Coco', 38);
+console.log('Cotsas:', littleCostas);

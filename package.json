@@ -4,6 +4,14 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "live-server"
+    "start": "live-server  --ignore=.*.ts",
+    "compile:tsc": "tsc --watch"
+  },
+  "dependencies": {
+    "global": "^4.4.0"
+  },
+  "devDependencies": {
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.2"
   }
 }
