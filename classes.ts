@@ -140,3 +140,21 @@ newProject.projectName = 'Giannis';
 newProject.changeName('Giorgos');
 
 console.log(newProject);
+
+//Private Constructors
+class OnlyOne {
+  private static instance: OnlyOne;
+
+  private constructor(public name: string) {}
+
+  static getInstance() {
+    if (!OnlyOne.instance) {
+      OnlyOne.instance = new OnlyOne('The Only one');
+    }
+
+    return OnlyOne.instance;
+  }
+}
+
+// const wrong = new OnlyOne('The only One');
+const right = OnlyOne.getInstance();

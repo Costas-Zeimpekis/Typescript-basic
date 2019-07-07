@@ -144,4 +144,19 @@ var newProject = new ITProject();
 newProject.projectName = 'Giannis';
 newProject.changeName('Giorgos');
 console.log(newProject);
+//Private Constructors
+var OnlyOne = /** @class */ (function () {
+    function OnlyOne(name) {
+        this.name = name;
+    }
+    OnlyOne.getInstance = function () {
+        if (!OnlyOne.instance) {
+            OnlyOne.instance = new OnlyOne('The Only one');
+        }
+        return OnlyOne.instance;
+    };
+    return OnlyOne;
+}());
+// const wrong = new OnlyOne('The only One');
+var right = OnlyOne.getInstance();
 //# sourceMappingURL=classes.js.map
