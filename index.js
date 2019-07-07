@@ -1,4 +1,7 @@
 "use strict";
+///<reference path="circleMath.ts"/>
+///<reference path="rectangleMath.ts"/>
+///<reference path="namespaces.ts"/>
 //string
 var myName = 'Costas';
 // numbers

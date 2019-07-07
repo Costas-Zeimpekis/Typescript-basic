@@ -1,3 +1,7 @@
+///<reference path="circleMath.ts"/>
+///<reference path="rectangleMath.ts"/>
+///<reference path="namespaces.ts"/>
+
 //string
 let myName = 'Costas';
 
