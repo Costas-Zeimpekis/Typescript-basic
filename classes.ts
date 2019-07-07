@@ -158,3 +158,15 @@ class OnlyOne {
 
 // const wrong = new OnlyOne('The only One');
 const right = OnlyOne.getInstance();
+
+//Readonly
+class Read {
+  constructor(public readonly title: string) {}
+}
+
+const article = new Read('Typescript');
+
+// This will not work with readonly
+// article.title = 'Js';
+
+console.log(article.title);

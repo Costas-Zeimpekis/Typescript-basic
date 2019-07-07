@@ -159,4 +159,15 @@ var OnlyOne = /** @class */ (function () {
 }());
 // const wrong = new OnlyOne('The only One');
 var right = OnlyOne.getInstance();
+//Readonly
+var Read = /** @class */ (function () {
+    function Read(title) {
+        this.title = title;
+    }
+    return Read;
+}());
+var article = new Read('Typescript');
+// This will not work with readonly
+// article.title = 'Js';
+console.log(article.title);
 //# sourceMappingURL=classes.js.map
