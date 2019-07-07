@@ -1,4 +1,4 @@
-// class Person {
+// class Person1 {
 //   // public name: string;
 //   private type: string = '';
 //   protected age: number = 27;
@@ -16,11 +16,11 @@
 //   }
 // }
 
-// let person = new Person('Costas', 'asdasd');
-// console.log(person);
+// let person1 = new Person('Costas', 'asdasd');
+// console.log(person1);
 
-// person.printAge('Eleni');
-// // person.setType('Max');
+// person1.printAge('Eleni');
+// // person1.setType('Max');
 
 // class Costas extends Person {
 //   constructor(username: string) {
@@ -38,7 +38,7 @@
 
 //   set species(value: string) {}
 // }
-class Person {
+class Person1 {
   name: string;
   private type: string = '';
   protected age: number = 27;
@@ -59,15 +59,15 @@ class Person {
   }
 }
 
-const person = new Person('Costas', '123K');
+const person1 = new Person1('Costas', '123K');
 
-// person.setType('married');
-// person.print('Cool Guy');
+// person1.setType('married');
+// person1.print('Cool Guy');
 
-console.log(person);
+console.log(person1);
 
 // Inheritance
-class Costas extends Person {
+class Costas extends Person1 {
   constructor(name: string, public age: number, username?: string) {
     super(name, username);
   }

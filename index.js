@@ -23,8 +23,8 @@ var Color;
 var myColor = Color.Green;
 console.log(myColor);
 // any
-var car = 'bmw';
-console.log(car);
+var car1 = 'bmw';
+console.log(car1);
 //functions
 function returnMyName() {
     return myName;
@@ -55,6 +55,9 @@ var complex = {
     output: function (all) {
         return this.data;
     }
+};
+var funcAndread = function (num1) {
+    return num1;
 };
 var complex2 = {
     data: [1, 2, 3],

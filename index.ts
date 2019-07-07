@@ -30,9 +30,9 @@ let myColor: Color = Color.Green;
 console.log(myColor);
 
 // any
-let car = 'bmw';
+let car1 = 'bmw';
 
-console.log(car);
+console.log(car1);
 
 //functions
 function returnMyName(): string {
@@ -80,6 +80,12 @@ type Complex = {
   output: (all: boolean) => number[];
 };
 
+type myFunc = (num1: number) => number;
+
+const funcAndread: myFunc = (num1: number): number => {
+  return num1;
+};
+
 let complex2: Complex = {
   data: [1, 2, 3],
   output(all: boolean): number[] {
@@ -108,7 +114,7 @@ function neverReturn(): never {
 }
 
 // Nullable Types
-let canBeNull: number | null= 12;
+let canBeNull: number | null = 12;
 canBeNull = null;
 let canAlsoBeNull;
 canAlsoBeNull = null;

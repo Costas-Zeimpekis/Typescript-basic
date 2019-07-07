@@ -1,5 +1,5 @@
 "use strict";
-// class Person {
+// class Person1 {
 //   // public name: string;
 //   private type: string = '';
 //   protected age: number = 27;
@@ -26,10 +26,10 @@ var __extends = (this && this.__extends) || (function () {
 //     console.log(this.type);
 //   }
 // }
-// let person = new Person('Costas', 'asdasd');
-// console.log(person);
-// person.printAge('Eleni');
-// // person.setType('Max');
+// let person1 = new Person('Costas', 'asdasd');
+// console.log(person1);
+// person1.printAge('Eleni');
+// // person1.setType('Max');
 // class Costas extends Person {
 //   constructor(username: string) {
 //     super('Max', username);
@@ -42,29 +42,29 @@ var __extends = (this && this.__extends) || (function () {
 //   private _species: string;
 //   set species(value: string) {}
 // }
-var Person = /** @class */ (function () {
-    function Person(name, username) {
+var Person1 = /** @class */ (function () {
+    function Person1(name, username) {
         if (username === void 0) { username = '123'; }
         this.username = username;
         this.type = '';
         this.age = 27;
         this.name = name;
     }
-    Person.prototype.print = function (type) {
+    Person1.prototype.print = function (type) {
         this.setType(type);
         console.log(this.type);
         return this.age;
     };
-    Person.prototype.setType = function (type) {
+    Person1.prototype.setType = function (type) {
         this.type = type;
         console.log(type);
     };
-    return Person;
+    return Person1;
 }());
-var person = new Person('Costas', '123K');
-// person.setType('married');
-// person.print('Cool Guy');
-console.log(person);
+var person1 = new Person1('Costas', '123K');
+// person1.setType('married');
+// person1.print('Cool Guy');
+console.log(person1);
 // Inheritance
 var Costas = /** @class */ (function (_super) {
     __extends(Costas, _super);
@@ -74,7 +74,7 @@ var Costas = /** @class */ (function (_super) {
         return _this;
     }
     return Costas;
-}(Person));
+}(Person1));
 var littleCostas = new Costas('Coco', 38);
 console.log('Cotsas:', littleCostas);
 //Getters & Setters
