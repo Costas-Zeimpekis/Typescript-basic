@@ -116,4 +116,32 @@ var Helpers = /** @class */ (function () {
     return Helpers;
 }());
 Helpers.calc(2);
+// Abstract Classes
+// You can not instanciet from them directly you can only use for inheritance
+var Project = /** @class */ (function () {
+    function Project() {
+        this.projectName = '';
+        this.budget = NaN;
+    }
+    Project.prototype.calcBudget = function () {
+        return this.budget;
+    };
+    return Project;
+}());
+var ITProject = /** @class */ (function (_super) {
+    __extends(ITProject, _super);
+    function ITProject() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    ITProject.prototype.changeName = function (name) {
+        this.projectName = name;
+    };
+    return ITProject;
+}(Project));
+//Thius will not work
+// const newProject = new Project();
+var newProject = new ITProject();
+newProject.projectName = 'Giannis';
+newProject.changeName('Giorgos');
+console.log(newProject);
 //# sourceMappingURL=classes.js.map

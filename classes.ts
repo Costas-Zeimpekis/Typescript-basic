@@ -112,3 +112,31 @@ class Helpers {
 }
 
 Helpers.calc(2);
+
+// Abstract Classes
+// You can not instanciet from them directly you can only use for inheritance
+abstract class Project {
+  projectName: string = '';
+  budget: number = NaN;
+
+  abstract changeName(name: string): void;
+
+  calcBudget() {
+    return this.budget;
+  }
+}
+
+class ITProject extends Project {
+  changeName(name: string) {
+    this.projectName = name;
+  }
+}
+
+//Thius will not work
+// const newProject = new Project();
+
+const newProject = new ITProject();
+newProject.projectName = 'Giannis';
+newProject.changeName('Giorgos');
+
+console.log(newProject);
