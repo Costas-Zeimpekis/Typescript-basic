@@ -119,6 +119,14 @@ if (typeof finalValue === 'string') {
   console.log(finalValue);
 }
 
+//Destructuring
+const [a, b]: [number, string] = [1, 'Costas'];
+
+let { nam1e, age }: { nam1e: string; age: number } = {
+  nam1e: 'Costas',
+  age: 20
+};
+
 // never
 function neverReturn(): never {
   throw new Error('An error!');
